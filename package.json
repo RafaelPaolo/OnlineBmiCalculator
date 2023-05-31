@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://RafaelPaolo.github.io/OnlineBmiCalculator",
+  "homepage": "https://rafaelpaolo.github.io/OnlineBmiCalculator/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
