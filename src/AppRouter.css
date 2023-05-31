@@ -1,0 +1,70 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Added to make the container full height */
+}
+
+.navigation {
+  flex: 0 0 2rem; /* Added flex basis to set a fixed width */
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #333;
+  color: #fff;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+@media (max-width: 768px) {
+  .navigation {
+    width: 100%;
+    position: relative;
+    max-height: none;
+  }
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.navigation li {
+  margin-bottom: 10px;
+}
+.navigation ul li .active {
+  color: #89a320;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .navigation {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .navigation ul {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
